@@ -14,11 +14,17 @@ The memory is represented as an array of N elements, which are initially empty. 
 
 ## Secred code deciphering by Implicit Cartesian Tree
 The Implicit Cartesian Tree is the array's superstructure (keeping array as the Cortesian tree) that allows 
+
   1) Insert new element anywhere in O(log N) time,
+  
   2) Remove any element in O(log N) time
+  
   3) Cut continuous subarray and insert it anywhere in O(log N) time,
+  
   4) Invert any continuous subarray in O(log N) time,
+  
   5) Ask for sum/minimum/maximum/etc in any continuous subarray in O(log N) time,
+  
   6) Change (add constant, set equal value, etc) in any continuous subarray in O(log N) time.
 
 Using this powerful structure, the following problem is being solved: given ciphered string Y and sequence of M cyclic permulations [i, j, k] (substring Y[i:j] shift k times), one should restore the original string efficiently. Given Implicit Cartesian Tree, this can be done just in O(|M| \log N).
