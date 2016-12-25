@@ -29,3 +29,5 @@ The Implicit Cartesian Tree is the array's superstructure (keeping array as the 
 
 Using this powerful structure, the following problem is being solved: given ciphered string Y and sequence of M cyclic permulations [i, j, k] (substring Y[i:j] shift k times), one should restore the original string efficiently. Given Implicit Cartesian Tree, this can be done just in O(|M| \log N).
   
+## Set of unique pairwise distance in tree
+Given a tree, one should white down the set of all unique pairwise distances between leaves in O(N log N) time. This can be achieved by reqursively splitting the tree into smaller parts by removing one vertex, finding the answer at subtrees and then find distances between leaves from different subtrees via Fast Fourier Transform.
