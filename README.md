@@ -31,3 +31,6 @@ Using this powerful structure, the following problem is being solved: given ciph
   
 ## Set of unique pairwise distance in tree
 Given a tree, one should white down the set of all unique pairwise distances between leaves in O(N log N) time. This can be achieved by reqursively splitting the tree into smaller parts by removing one vertex, finding the answer at subtrees and then find distances between leaves from different subtrees via Fast Fourier Transform.
+
+## Lowest allowed string
+This problem is about context-free grammatics. Given the grammar rules, one should find the lowest (lexicographically) string that can be obtained within these rules. First, one should rewrite these rules in the Normal Chomsky Form using a sophisticated algorithm that runs on O(N^2) time and than solve the problem dynamically using a very short function GetSmallestString. So, the main issue is to get the Normal Chomsky Form.
